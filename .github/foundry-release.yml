@@ -1,0 +1,15 @@
+on: [push]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: Foundry Release
+    steps:
+      - name: Foundry Release
+        id: foundry-release
+        uses: foundryvtt-dcc/foundry-release-action
+        with:
+          who-to-greet: 'Test Greet'
+      # Use the output from the `hello` step
+      - name: Get the output time
+        run: echo "The time was ${{ steps.foundry-release.outputs.time }}"
