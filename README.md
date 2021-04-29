@@ -1,2 +1,1 @@
-# foundry-release-action-testbed
-Testbed for Foundry Release Action
+# Testbed for Foundry Release Action
