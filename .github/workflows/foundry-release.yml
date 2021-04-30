@@ -11,4 +11,4 @@ jobs:
         id: foundry-release
         uses: foundryvtt-dcc/foundry-release-action@main
         with:
-          actionToken: ${{ GITHUB_TOKEN }}
+          actionToken: ${{ secrets.GITHUB_TOKEN }}
