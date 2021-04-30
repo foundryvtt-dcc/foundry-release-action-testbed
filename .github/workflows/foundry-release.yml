@@ -10,3 +10,5 @@ jobs:
       - name: Foundry Release
         id: foundry-release
         uses: foundryvtt-dcc/foundry-release-action@main
+        with:
+          actionToken: ${{ GITHUB_TOKEN }}
