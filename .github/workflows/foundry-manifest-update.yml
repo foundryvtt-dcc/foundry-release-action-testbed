@@ -1,0 +1,17 @@
+name: Foundry Manifest Update
+
+release:
+  types:
+    - published
+
+jobs:
+  update_manifest_post_release:
+    runs-on: ubuntu-latest
+    name: Foundry Manifest Update
+    steps:
+      - name: Foundry Manifest Update
+        id: foundry-manifest Update
+        uses: foundryvtt-dcc/foundry-manifest-update-action@main
+        with:
+          actionToken: ${{ secrets.GITHUB_TOKEN }}
+          manifestFileName: 'system.json'
