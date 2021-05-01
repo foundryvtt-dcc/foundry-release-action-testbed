@@ -1,8 +1,9 @@
 name: Foundry Manifest Update
 
-release:
-  types:
-    - published
+on:
+  release:
+    types:
+      - published
 
 jobs:
   update_manifest_post_release:
