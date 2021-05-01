@@ -1,7 +1,10 @@
-on: [ push ]
+on:
+  push:
+    paths:
+      - 'version.txt'
 
 jobs:
-  hello_world_job:
+  create_foundry_release:
     runs-on: ubuntu-latest
     name: Foundry Release
     steps:
