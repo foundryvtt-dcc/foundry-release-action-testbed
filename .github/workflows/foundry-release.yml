@@ -1,4 +1,4 @@
-on: [push]
+on: [ push ]
 
 jobs:
   hello_world_job:
@@ -12,3 +12,4 @@ jobs:
         uses: foundryvtt-dcc/foundry-release-action@main
         with:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
+          manifestFileName: 'system.json'
