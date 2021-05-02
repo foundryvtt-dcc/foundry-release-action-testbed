@@ -13,7 +13,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repo: foundryvtt-dcc/dcc-content
+          repository: foundryvtt-dcc/dcc-content
           token: ${{ secrets.PUBLISH_TOKEN }}
 
       - name: Foundry Release Upload
