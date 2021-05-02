@@ -24,4 +24,5 @@ jobs:
           awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
           awsAccessSecret: ${{ secrets.AWS_ACCESS_SECRET }}
           awsBucketName: ${{ secrets.AWS_BUCKET_NAME }}
+          awsBucketRegion: ${{ secrets.AWS_BUCKET_REGION }}
           manifestFileName: 'system.json'
