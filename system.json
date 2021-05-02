@@ -51,7 +51,7 @@
   "gridDistance": 5,
   "gridUnits": "ft",
   "primaryTokenAttribute": "attributes.hp",
-  "protected": true,
+  "protected": false,
   "secondaryTokenAttribute": "abilities.lck.value",
   "socket": true,
   "initiative": "1d20 + @attributes.init.value",
