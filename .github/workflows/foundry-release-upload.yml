@@ -1,0 +1,23 @@
+name: Foundry Release Upload
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  foundry_release_upload:
+    runs-on: ubuntu-latest
+    name: Foundry Release Upload
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          repo: foundryvtt-dcc/dcc-content
+
+      - name: Foundry Release Upload
+        id: foundry-release-upload
+        uses: foundryvtt-dcc/foundry-release-upload-action@main
+        with:
+          actionToken: ${{ secrets.PUBLISH_TOKEN }}
+          manifestFileName: 'system.json'
