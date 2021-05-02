@@ -19,3 +19,4 @@ jobs:
         with:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
           manifestFileName: 'system.json'
+          manifestProtectedTrue: true
