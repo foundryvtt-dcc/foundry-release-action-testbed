@@ -21,4 +21,7 @@ jobs:
         uses: foundryvtt-dcc/foundry-release-upload-action@main
         with:
           actionToken: ${{ secrets.PUBLISH_TOKEN }}
+          awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          awsAccessSecret: ${{ secrets.AWS_ACCESS_SECRET }}
+          awsBucketName: ${{ secrets.AWS_BUCKET_NAME }}
           manifestFileName: 'system.json'
