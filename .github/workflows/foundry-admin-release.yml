@@ -1,0 +1,21 @@
+name: Foundry Admin Release
+
+on:
+  release:
+    types:
+      - published
+
+jobs:
+  update_manifest_post_release:
+    runs-on: ubuntu-latest
+    name: Foundry Admin Release
+    steps:
+      - name: Foundry Admin Release
+        id: foundry-manifest-update
+        uses: foundryvtt-dcc/foundry-admin-release-action@main
+        with:
+          actionToken: ${{ secrets.GITHUB_TOKEN }}
+          manifestFileName: 'module.json'
+          foundryAdminPassword: ${{ secrets.FOUNDRY_ADMIN_PASSWORD }}
+          foundryAdminUsername: ${{ secrets.FOUNDRY_ADMIN_USERNAME }}
+          foundryAdminPackageURL: ${{ secrets.FOUNDRY_ADMIN_PACKAGE_URL }}
