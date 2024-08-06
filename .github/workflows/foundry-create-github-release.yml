@@ -2,9 +2,11 @@ name: Create GitHub Release
 
 on:
   push:
-   tags-ignore:
+    branches:
+      - 'main'
+    tags-ignore:
       - '**'
-   paths:
+    paths:
       - 'version.txt'
       
 jobs:
