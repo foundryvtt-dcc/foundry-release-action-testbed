@@ -1,20 +1,22 @@
-name: Create Foundry Release
+name: Create GitHub Release
 
 on:
   push:
-    paths:
+   tags-ignore:
+      - '**'
+   paths:
       - 'version.txt'
-
+      
 jobs:
   create_foundry_release:
     runs-on: ubuntu-latest
-    name: Foundry Release
+    name: Create GitHub Release
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Foundry Release
-        id: foundry-release
+      - name: Create GitHub Release
+        id: create-github-release
         uses: foundryvtt-dcc/foundry-release-action@main
         with:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
