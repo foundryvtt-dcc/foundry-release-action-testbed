@@ -27,4 +27,4 @@ jobs:
           compatibilityMax: '12'
           compatibilityVerified: '12'
           foundryToken: ${{ secrets.FOUNDRY_PACKAGE_RELEASE_TOKEN }}
-          dryRun: false
+          dryRun: true
