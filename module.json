@@ -2,7 +2,7 @@
   "name": "fratb",
   "title": "Release Action Testbed",
   "description": "Foundry Release Action Test Module Manifest",
-  "version": "0.26.26",
+  "version": "0.26.27",
   "minimumCoreVersion": "12",
   "compatibility": {
     "minimum": "12",
@@ -60,8 +60,8 @@
   "socket": true,
   "initiative": "1d20 + @attributes.init.value",
   "url": "https://github.com/foundryvtt-dcc/dcc",
-  "manifest": "https://github.com/foundryvtt-dcc/foundry-release-action-testbed/releases/download/v0.26.26/module.json",
-  "download": "https://github.com/foundryvtt-dcc/foundry-release-action-testbed/releases/download/v0.26.26/foundry-release-action-testbed.zip",
+  "manifest": "https://github.com/foundryvtt-dcc/foundry-release-action-testbed/releases/download/v0.26.27/module.json",
+  "download": "https://github.com/foundryvtt-dcc/foundry-release-action-testbed/releases/download/v0.26.27/foundry-release-action-testbed.zip",
   "bugs": "https://github.com/foundryvtt-dcc/foundry-release-action-testbed/issues",
   "allowBugReporter": true,
   "license": "LICENSE.txt"
