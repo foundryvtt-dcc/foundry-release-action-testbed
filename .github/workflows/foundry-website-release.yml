@@ -22,7 +22,7 @@ jobs:
         with:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
           versionFileName: 'version.txt'
-          manifestFileName: 'system.json'
+          manifestFileName: 'module.json'
           compatibilityMin: '12'
           compatibilityMax: '12'
           compatibilityVerified: '12'
