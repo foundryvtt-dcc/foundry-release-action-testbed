@@ -21,10 +21,6 @@ jobs:
         uses: foundryvtt-dcc/foundry-package-release-action@main
         with:
           actionToken: ${{ secrets.GITHUB_TOKEN }}
-          versionFileName: 'version.txt'
           manifestFileName: 'module.json'
-          compatibilityMin: '12'
-          compatibilityMax: '12'
-          compatibilityVerified: '12'
           foundryToken: ${{ secrets.FOUNDRY_PACKAGE_RELEASE_TOKEN }}
           dryRun: true
