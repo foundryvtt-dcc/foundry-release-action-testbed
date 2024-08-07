@@ -14,13 +14,12 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: foundryvtt-dcc/dcc-content
-          token: ${{ secrets.PUBLISH_TOKEN }}
 
       - name: Foundry Release Upload
         id: foundry-release-upload
         uses: foundryvtt-dcc/foundry-release-upload-action@main
         with:
-          actionToken: ${{ secrets.PUBLISH_TOKEN }}
+          actionToken: ${{ secrets.GITHUB_TOKEN }}
           awsAccessKeyId: ${{ secrets.AWS_ACCESS_KEY_ID }}
           awsAccessSecret: ${{ secrets.AWS_ACCESS_SECRET }}
           awsBucketName: ${{ secrets.AWS_BUCKET_NAME }}
