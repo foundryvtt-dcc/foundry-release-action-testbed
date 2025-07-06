@@ -5,9 +5,9 @@
   "version": "0.26.28",
   "minimumCoreVersion": "12",
   "compatibility": {
-    "minimum": "12",
-    "verified": "12",
-    "maximum": "12"
+    "minimum": "13",
+    "verified": "13",
+    "maximum": "13"
   },
   "templateVersion": 5,
   "author": "DCC Foundry Volunteer Team (https://discord.gg/2PR9YH9)",
